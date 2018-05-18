@@ -1,0 +1,15 @@
+<%#= form_for(@cocktail) do |f| %>
+  <%#= f.label :name %>
+  <%#= f.text_field :name %>
+  <%#= f.association :dose  %>
+  <%#= f.text_field :dose %>
+
+  <%#= f.submit %>
+
+  <div class="container">
+  <%= simple_form_for [@cocktail] do |f|  %>
+    <%= f.input :name %>
+    <%= f.submit "Add a cocktail", class: "btn btn-primary" %>
+  <% end %>
+</div>
+<%# end %>
